@@ -3,7 +3,7 @@ About r-wordcloud
 
 Home: http://blog.fellstat.com/?cat=11 http://www.fellstat.com
 
-Package license: LGPL-2.1
+Package license: LGPL-2.1-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wordcloud-feedstock/blob/master/LICENSE.txt)
 
