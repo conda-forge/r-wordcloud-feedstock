@@ -47,7 +47,7 @@ test:
 
 about:
   home: http://blog.fellstat.com/?cat=11 http://www.fellstat.com
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   summary: Functionality to create pretty word clouds, visualize differences and similarity between
     documents, and avoid over-plotting in scatter plots with text.
   license_family: LGPL
