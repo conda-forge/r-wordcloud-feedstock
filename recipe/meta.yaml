@@ -12,7 +12,7 @@ source:
   sha256: 53716954430acd4f164bfd8eacd7068a908ee3358293ded6cd992d53b7f72649
 
 build:
-  number: 5
+  number: 6
   rpaths:
     - lib/R/lib/
     - lib/
@@ -30,6 +30,9 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-rcolorbrewer               # [build_platform != target_platform]
+    - r-rcpp >=0.9.4               # [build_platform != target_platform]
   host:
     - r-base
     - r-rcolorbrewer
@@ -49,7 +52,6 @@ about:
   license: LGPL-2.1-only
   summary: Functionality to create pretty word clouds, visualize differences and similarity between
     documents, and avoid over-plotting in scatter plots with text.
-  license_family: LGPL
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
 
 extra:
